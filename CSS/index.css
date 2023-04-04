@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url(../CSS/palette.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url(../fonts/Panton.ttf);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  font-family: 'Panton', sans-serif;
+  background-color: var(--secondary-bc);
+  border-bottom: 2px solid white;
+}
+
+.nav-logo {
+  cursor: pointer;
+  margin-right: 3em;
+}
+
+.nav-logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.nav-logo h1 {
+  color: var(--secondary-tc);
+  margin: 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.nav-logo h1::after {
+  content: '';
+  width: 70%;
+  height: 2px;
+  background-color: #acacac;
+  display: block;
+  margin: auto;
+}
+
+.nav-list {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list a {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 15px;
+  color: var(--secondary-tc);
+  text-decoration: none;
+}
+
+.nav-btn {
+  padding: 15px 25px;
+  color: var(--secondary-tc);
+  margin: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-shadow: 0px 1.5px 0px rgb(0 0 0 / 25%);
+  border: 2px solid white;
+}
+
+.nav-btn span {
+  color: var(--primary-button-tc);
+  margin-left: 5px;
+}
+
+.btn-login {
+  background-color: var(--primary-button-bc);
+}
+
+.btn-cart {
+  background-color: var(--sucess-button-bc);
+}
+
+.nav-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.header {
+  padding: 6em;
+  background-image: url(../Imagens/background.png);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-text {
+  color: var(--secondary-tc);
+  font-family: 'Panton', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 100px;
+  text-shadow: 0px 4.5px 0px rgba(0, 0, 0, 0.637);
+}
+
+.header span {
+  margin: 0;
+  font-size: 20px;
+  text-transform: initial;
+  text-shadow: 0px 1.5px 0px rgba(0, 0, 0, 0.637);
+}
+
+.main {
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-title {
+  margin-bottom: 2em;
+}
+
+.main-title img {
+  padding: 8px;
+  background-color: #fac562;
+  border-radius: 5px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 5px;
+}
+
+.main-title h1 {
+  color: var(--primary-tc);
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.card-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin: 0;
+}
+
+.card-content p {
+  margin: 0;
+}
+
+.play {
+  padding: 40px;
+  color: var(--secondary-tc);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--secondary-bc);
+}
+
+.play-content {
+  padding: 40px 50px;
+  background-color: var(--tertiary-bc);
+  border-radius: 10px;
+  border: 3px solid white;
+  box-shadow: 0px 5px 0px #ffffff;
+}
+
+.play-text a {
+  cursor: pointer;
+}
+
+.play-content h1 {
+  margin: 0;
+  font-size: 50px;
+  font-family: 'Panton';
+  text-transform: uppercase;
+  text-shadow: 0px 4.5px 0px rgb(0 0 0 / 25%);
+}
+
+.play-images img {
+  width: 280px;
+  height: 260px;
+}
+
+.play-copy-alert {
+  font-family: 'Panton', sans-serif;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px;
+  text-transform: uppercase;
+  background-color: var(--sucess-button-bc);
+  text-shadow: 0px 1.5px 0px rgb(0 0 0 / 25%);
+  border-radius: 4px;
+  box-shadow: 0px 3px 0px #f5f5f5;
+  border: 2px solid #f5f5f5;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.play-copy-alert.show {
+  display: block;
+  opacity: 1;
+}

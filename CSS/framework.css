@@ -1,0 +1,37 @@
+@import url(../CSS/palette.css);
+@import url(../CSS/index.css);
+
+.btn {
+    display: inline-block;
+    padding: 0.9375em 1.5625em;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-shadow: 0px 1.5px 0px rgb(0 0 0 / 25%);
+    border: 2px solid white;
+    text-align: center;
+    font-family: 'Panton';
+    border: 2px solid black;
+}
+
+.btn-primary {
+    color: var(--primary-button-tc);
+    background-color: var(--primary-button-bc);
+}
+
+.btn-sucess {
+    color: var(--sucess-button-tc);
+    background-color: var(--sucess-button-bc);
+}
+
+.btn-alert {
+    color: var(--alert-button-tc);
+    background-color: var(--alert-button-bc);
+    text-shadow: none;
+}
+
+.btn-outline {
+    color: black;
+    text-shadow: none;
+}

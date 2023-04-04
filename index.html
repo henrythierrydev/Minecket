@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecket</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/framework.css">
+    <link rel="shortcut icon" href="Imagens/logo.png" type="image/x-icon">
+    <script src="JS/TextCopy.js"></script>
+</head>
+
+<body>
+    <!--=== Início da barra de navegação ===-->
+    <nav class="nav">
+        <div class="nav-logo flex">
+            <img src="Imagens/logo.png" alt="Logo do servidor Minecket">
+            <h1>Minecket</h1> 
+        </div>
+
+        <div class="nav-list flex">
+            <a href="/"><span>Inicio</span></a> 
+            <a href="/"><span>Loja</span></a> 
+            <a href="/"><span>Regras</span></a>
+            <a href="/"><span>Discord</span></a> 
+        </div>
+
+        <div class="flex">
+            <a href="/" class="nav-btn btn-login flex">
+                <img src="Imagens/login.png" alt="Ícone de login">
+                <span>Login</span>
+            </a>
+
+            <a href="/" class="nav-btn btn-cart flex">
+                <img src="Imagens/cart.png" alt="Ícone do carrinho de compras">
+                <span>Carrinho</span>
+            </a>
+        </div>
+    </nav>
+    <!--=== Fim da barra de navegação ===-->
+
+    <!--=== Início do cabeçalho ===-->
+    <header class="header header-text">
+        <h1>Minecket</h1>
+        <span>O maior e melhor servidor de factions.</span>
+    </header>
+    <!--=== Fim do cabeçalho ===-->
+
+    <!--=== Início do conteúdo principal ===-->
+    <main class="main">
+        <div class="container">
+            <div class="main-title flex">
+                <img src="Imagens/produtos.png" alt="" width="50px" height="50px">
+                <h1>Explore os produtos</h1>
+            </div>
+            
+            <div class="cards">
+                <div class="card">
+                    <img src="Imagens/bronze.png" alt="Imagem">
+
+                    <div class="card-content">
+                        <h3>VIP Bronze</h3>
+                        <p>R$ 4,99</p>
+                    </div>
+
+                    <a class="btn btn-primary" href="#">Ver mais</a>
+                </div>
+
+                <div class="card">
+                    <img src="Imagens/prata.png" alt="Imagem">
+
+                    <div class="card-content">
+                        <h3>VIP Prata</h3>
+                        <p>R$ 9,99</p>
+                    </div>
+
+                    <a class="btn btn-sucess" href="#">Ver mais</a>
+                </div>
+
+                <div class="card">
+                    <img src="Imagens/ouro.png" alt="Imagem">
+
+                    <div class="card-content">
+                        <h3>VIP Ouro</h3>
+                        <p>R$ 14,99</p>
+                    </div>
+
+                    <a class="btn btn-alert" href="#">Ver mais</a>
+                </div>
+                
+                <div class="card">
+                    <img src="Imagens/cosmeticos.png" alt="Imagem">
+
+                    <div class="card-content">
+                        <h3>Cosméticos</h3>
+                        <p>A partir de R$ 2,99</p>
+                    </div>
+
+                    <a class="btn btn-outline" href="#">Ver mais</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--=== Fim do conteúdo principal ===-->
+    
+    <!--=== Inicio da seção de jogar ===-->
+    <section class="play">
+        <div class="play-content flex">
+            <div class="play-images">
+                <img src="Imagens/steve-swords.png" alt="">
+            </div>
+
+            <div class="play-text">
+                <h1>Jogue agora</h1>
+                <p>Utilize o IP jogar.minecket.net para acessar o servidor via Minecraft pirata e/ou original a qualquer momento.</p>
+                <a class="btn btn-sucess" id="copy-btn" onclick="copyIP()">Copiar IP</a>
+                <span class="play-copy-alert" id="play-copy-alert">IP copiado!</span>
+            </div>
+
+            <div class="play-images">
+                <img src="Imagens/steve-see.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!--=== Fim da seção de jogar ===-->
+    
+    <!--=== Seção de footer ===-->
+    <footer>
+        <p>©2023 Minecket | Todos os Direitos Reservados.</p>
+        <p>Minecraft é uma marca de Mojang e Minecket não é atribuído e nem apoiado por tal.</p>
+    </footer>
+</body>
+</html>
