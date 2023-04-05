@@ -286,3 +286,56 @@ body {
   background-color: #999999;
   margin: 0 auto;
 }
+
+/* =======  SECTION CAROUSEL ======= */
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-item:not(.active) {
+  display: none;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.carousel-item img {
+  max-width: 100%;
+}
+
+.carousel-item h2 {
+  margin: 10px 0;
+}
+
+.carousel-radio {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.radio-input:checked + .radio-label {
+  background-color: white;
+}

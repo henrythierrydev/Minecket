@@ -48,28 +48,39 @@ newsItems.forEach(item => {
 //    CAROUSEL
 // ================
 
-let app = document.getElementById('app')
-let img_container = document.getElementsByClassName('img-container')
-let img = document.getElementsByTagName('img')
-let desliza = 1;
+const radioInputs = document.querySelectorAll(".radio-input");
+const carouselItems = document.querySelectorAll(".carousel-item");
+const radioLabels = document.querySelectorAll(".radio-label");
+let currentIndex = 0;
 
-setInterval(()=>{
-    for(let i=0; i<img_container.length; i++){
-        img_container[i].style.transform = `translate(${-desliza * img[i].width}px)`
-    }
-    
-    desliza++
-    if(desliza >= img_container.length){
-        desliza = 0
-    }
-},3000)
-app.addEventListener('click', ()=>{
-    for(let i=0; i<img_container.length; i++){
-        img_container[i].style.transform = `translate(${-desliza * img[i].width}px)`
-    }
-    
-    desliza++
-    if(desliza >= img_container.length){
-        desliza = 0
-    }
-})
+function showItem(index) {
+  carouselItems[currentIndex].classList.remove("active");
+  radioLabels[currentIndex].classList.remove("active");
+  currentIndex = index;
+  carouselItems[currentIndex].classList.add("active");
+  radioLabels[currentIndex].classList.add("active");
+  radioInputs[currentIndex].checked = true;
+}
+
+function nextItem() {
+  let newIndex = currentIndex + 1;
+  if (newIndex >= carouselItems.length) {
+    newIndex = 0;
+  }
+  showItem(newIndex);
+}
+
+let intervalId = setInterval(nextItem, 10000);
+
+radioLabels.forEach((label, index) => {
+  label.addEventListener("click", () => {
+    showItem(index);
+    clearInterval(intervalId);
+    intervalId = setInterval(nextItem, 10000);
+  });
+  label.setAttribute('for', `radio-${index + 1}`);
+});
+
+radioInputs.forEach((input, index) => {
+  input.setAttribute('id', `radio-${index + 1}`);
+});
