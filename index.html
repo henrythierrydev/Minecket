@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!--=== Codificação de caracteres ===-->
+    <!--=== Tags padrões ===-->
     <meta charset="UTF-8">
-    <!--=== Título ===-->
     <title>Minecket</title>
-    <!--=== Estilização Externa ===-->
-    <link rel="stylesheet" href="CSS/index.css">
-    <!--=== Mini framework de estilo ===-->
-    <link rel="stylesheet" href="CSS/framework.css">
-    <!--=== Compatibilidade de navegadores ===-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--=== Começo de definição de responsividade ===-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--=== Icone padrão do site, logo modificavel ===-->
     <link rel="shortcut icon" href="Imagens/logo.png" type="image/x-icon">
 
-    <!--=== SEO ===-->
+    <!--=== Folhas de estilos ===-->
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/framework.css">
+
+    <!--=== Perfil social ===-->
 </head>
 
 <body>
     <!--=== Barra de navegação ===-->
     <nav class="nav">
         <div class="nav-logo flex">
-            <img src="Imagens/logo.png" alt="Logo do servidor Minecket">
+            <img src="Imagens/logo.png" alt="Logo do servidor Minecket" width="70px" height="70px">
             <h1>Minecket</h1> 
         </div>
 
@@ -36,12 +32,12 @@
 
         <div class="flex">
             <a href="/" class="nav-btn btn-login flex">
-                <img src="Imagens/login.png" alt="Ícone de login">
+                <img src="Imagens/login.png" alt="Ícone de login" width="20px" height="20px">
                 <span>Login</span>
             </a>
 
             <a href="/" class="nav-btn btn-cart flex">
-                <img src="Imagens/cart.png" alt="Ícone do carrinho de compras">
+                <img src="Imagens/cart.png" alt="Ícone do carrinho de compras" width="20px" height="20px">
                 <span>Carrinho</span>
             </a>
         </div>
@@ -57,7 +53,7 @@
     <main class="main">
         <div class="container">
             <div class="main-title flex">
-                <img src="Imagens/produtos.png" alt="imagem de uma caixa" width="50px" height="50px">
+                <img src="Imagens/produtos.png" alt="imagem de uma caixa">
                 <h1>Explore os produtos</h1>
             </div>
             
@@ -119,7 +115,7 @@
             <div class="play-text">
                 <h1>Jogue agora</h1>
                 <p>Utilize o IP jogar.minecket.net para acessar o servidor via Minecraft pirata e/ou original a qualquer momento.</p>
-                <a class="btn btn-sucess" id="copy-btn" onclick="copyIP()">Copiar IP</a>
+                <a class="btn btn-sucess" id="copy-btn">Copiar IP</a>
                 <span class="play-copy-alert" id="play-copy-alert">IP copiado!</span>
             </div>
 
@@ -129,6 +125,77 @@
         </div>
     </section>
 
+    <!--=== Seção de novidades ===-->
+    <section class="novidades">
+        <div class="container">
+            <div class="news-title flex">
+                <img src="Imagens/news.png" alt="imagem de uma caixa">
+
+                <div class="news-title-content">
+                    <h1>Novidades</h1>
+                    <span>Tudo sobre os ultimos lançamentos do servidor</span>                    
+                </div>
+            </div>
+    
+            <div class="news-container news-primary">
+                <div class="news-item">
+                    <div class="news-item-title flex">
+                        <img src="" alt="">
+    
+                        <div class="news-title-text">
+                            <h1>Novo Skywars!!</h1>
+                            <span>• 04 de abril de 2023</span>
+                        </div>
+                    </div>
+    
+                    <div class="news-item-content">
+                        <p class="news-item-content-description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus impedit expedita iste odio corporis quas similique laudantium laboriosam nihil. Perspiciatis mollitia numquam molestias veritatis nesciunt. Aspernatur rem et aliquam tenetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. At quos aliquam itaque recusandae reprehenderit impedit soluta, accusamus nesciunt assumenda voluptatum eum commodi eaque unde deserunt consequuntur vero velit rerum neque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero aut sapiente dolorum rem sed nesciunt sint? Consectetur, dignissimos! Ratione, quas magni dolores inventore ad commodi deleniti fugit alias cumque at?
+                        </p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <div class="news-container news-alert">
+            <div class="news-item">
+                <div class="news-item-title flex">
+                    <img src="" alt="">
+
+                    <div class="news-title-text">
+                        <h1>Novo Skywars!!</h1>
+                        <span>• 04 de abril de 2023</span>
+                    </div>
+                </div>
+
+                <div class="news-item-content">
+                    <p class="news-item-content-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus impedit expedita iste odio corporis quas similique laudantium laboriosam nihil. Perspiciatis mollitia numquam molestias veritatis nesciunt. Aspernatur rem et aliquam tenetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. At quos aliquam itaque recusandae reprehenderit impedit soluta, accusamus nesciunt assumenda voluptatum eum commodi eaque unde deserunt consequuntur vero velit rerum neque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero aut sapiente dolorum rem sed nesciunt sint? Consectetur, dignissimos! Ratione, quas magni dolores inventore ad commodi deleniti fugit alias cumque at?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-container news-secondary">
+            <div class="news-item">
+                <div class="news-item-title flex">
+                    <img src="" alt="">
+
+                    <div class="news-title-text">
+                        <h1>Novo Skywars!!</h1>
+                        <span>• 04 de abril de 2023</span>
+                    </div>
+                </div>
+
+                <div class="news-item-content">
+                    <p class="news-item-content-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus impedit expedita iste odio corporis quas similique laudantium laboriosam nihil. Perspiciatis mollitia numquam molestias veritatis nesciunt. Aspernatur rem et aliquam tenetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. At quos aliquam itaque recusandae reprehenderit impedit soluta, accusamus nesciunt assumenda voluptatum eum commodi eaque unde deserunt consequuntur vero velit rerum neque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero aut sapiente dolorum rem sed nesciunt sint? Consectetur, dignissimos! Ratione, quas magni dolores inventore ad commodi deleniti fugit alias cumque at?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+      
     <!--=== Seção de discord ===-->
     <section class="discord">
         <div class="discord-title">
