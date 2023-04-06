@@ -1,0 +1,99 @@
+@import url(../CSS/palette.css);
+@import url(../CSS/index.css);
+
+/* =======  BASE PRINCIPAL ======= */
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* =======  CRIA BOTOES ======= */
+
+.btn {
+  display: inline-block;
+  padding: 0.9375em 1.5625em;
+  margin: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-shadow: 0px 1.5px 0px rgb(0 0 0 / 25%);
+  border: 2px solid white;
+  text-align: center;
+  font-family: 'Panton';
+  border: 2px solid black;
+}
+
+.btn-primary {
+  color: var(--primary-button-tc);
+  background-color: var(--primary-button-bc);
+}
+
+.btn-sucess {
+  color: var(--sucess-button-tc);
+  background-color: var(--sucess-button-bc);
+}
+
+.btn-alert {
+  color: var(--alert-button-tc);
+  background-color: var(--alert-button-bc);
+  text-shadow: none;
+}
+
+.btn-outline {
+  color: black;
+  text-shadow: none;
+}
+
+/* =======  CRIA CARDS ======= */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin: 0;
+}
+
+.card-content p {
+  margin: 0;
+}
+
+/* =======  CRIA ACCORDIONS ======= */
+
+.news-primary {
+  border-left: 7px solid #08adff;
+  background-color: #9eeaf9;
+  box-shadow: 0px 7px 0px #08adff;    
+}
+
+.news-alert {
+  border-left: 7px solid #c09207 ;
+  background-color: #ffc107 ;
+  box-shadow: 0px 7px 0px #c09207;    
+}
+
+.news-secondary {
+  border-left: 7px solid #9c9c9c;
+  background-color: #d4d4dc;
+  box-shadow: 0px 7px 0px #9c9c9c;    
+}
