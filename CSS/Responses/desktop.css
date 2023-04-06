@@ -1,11 +1,11 @@
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
+@media only screen and (min-width: 1024px) and (max-width: 1399px) {
     
     /* =======  NAVBAR ======= */
 
     @media only screen and (min-width: 1024px) and (max-width: 1329px) {
         .btn-cart {
             display: none;
-        }        
+        }
     }
 
     .nav-logo {
@@ -18,8 +18,12 @@
 
     /* =======  MAIN ======= */
 
-    @media only screen and (min-width: 1024px) and (max-width: 1329px) {
+    @media screen and (min-width: 1024px) and (max-width: 1329px) {
         .card-cosmetics {
+            display: none;
+        }
+
+        .sp-2 {
             display: none;
         }
 
