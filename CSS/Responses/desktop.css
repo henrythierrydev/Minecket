@@ -1,0 +1,85 @@
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+    
+    /* =======  NAVBAR ======= */
+
+    @media only screen and (min-width: 1024px) and (max-width: 1329px) {
+        .btn-cart {
+            display: none;
+        }        
+    }
+
+    .nav-logo {
+        margin: 0;
+    }
+    
+    .btn-login {
+        margin: 0px 0px 0px 25px;
+    }
+
+    /* =======  MAIN ======= */
+
+    @media only screen and (min-width: 1024px) and (max-width: 1329px) {
+        .card-cosmetics {
+            display: none;
+        }
+
+        @media only screen and (min-width: 1199px) {
+            .card {
+                margin: 0px 2em;
+            }
+        }
+    }
+
+    /* =======  JOGAR ======= */
+
+    .play-images img {
+        width: 224px;
+        height: 208px;
+    }
+
+    /* =======  FOOTER ======= */
+
+    .fs-2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1900px) and (max-width: 3839px) {
+    
+    /* =======  MAIN ======= */
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 400px;
+        margin: 20px;
+    }
+
+    /* =======  JOGAR ======= */ 
+    
+    .play {
+        padding: 5em;
+    }
+
+    .play-images img {
+        width: 336px;
+        height: 312px;
+    }
+
+    .play-text p {
+        font-size: 20px;
+    }
+
+    .novidades {
+        padding: 70px;
+    }
+
+    .footer {
+        padding: 30px 70px;
+    }
+}
