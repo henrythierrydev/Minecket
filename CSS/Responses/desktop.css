@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1000px) and (max-width: 1399px) {
+@media only screen and (min-width: 1000px) and (max-width: 2560px) {
     
     /* =======  NAVBAR ======= */
 
@@ -59,5 +59,19 @@
 
     .fs-2 {
         display: none;
+    }
+
+    @media screen and (min-width: 1900px) {
+        .card {
+            width: 20%;
+            margin: 1em;
+        }
+        
+        @media screen and (min-width: 2500px) {
+
+            .header, .main, .play, .novidades, .footer {
+                padding: 5em 20em;
+            }
+        }
     }
 }
