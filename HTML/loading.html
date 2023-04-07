@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minecket - Carregando...</title>
+  <meta charset="UTF-8">
+  <title>Minecket</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Imagens/logo.png" type="image/x-icon">
+  
+  <style>
+    #loading {
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 5px solid #ccc;
+      border-top-color: #333;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  
+  <script>
+    // Redireciona para a página index.html após 3 segundos
+    setTimeout(function() {
+      window.location.href = "../index.html";
+    }, 3000);
+  </script>
+</head>
+
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+</body>
+</html>
