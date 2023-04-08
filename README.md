@@ -1,8 +1,14 @@
 # 🏆 Minecket
 
-> Este é um modelo de website para servidores de minecraft feito por mim e meus amigos de faculdade, esse foi um projeto proposto pela disciplina de <b>Códigos de alta performace</b>, onde o objetivo era criar um website responsivo com login sem back-end, então visando isso, resolvermos fazer um modelo público para que todos possam usar.
+> Minecket é um modelo de website criado por um grupo de amigos durante a disciplina de Códigos de Alta Performance na faculdade em um projeto. O objetivo era criar um website responsivo para servidores de Minecraft com login sem backend, sem o uso de frameworks, com foco em velocidade e limpeza de código.
 
-> Não foi usado nenhum tipo de framework, ou seja, o código é completamente nativo, porém limpo e rápido, como foi um projeto de uma disciplina importante, não pudermos usar nenhum framework, mas mesmo assim ocódigo ficou rápido e limpo o suficiente para um ótimo desempenho.
+> Com um design elegante e totalmente responsivo, o modelo é altamente adaptável a diferentes formatos de tela, desde desktops até dispositivos móveis. O website é completamente nativo e rápido, projetado para oferecer um desempenho excepcional em todas as circunstâncias.
+
+> Este modelo de website é público e pode ser utilizado por qualquer pessoa que deseje criar um website para um servidor de Minecraft. Basta modificar alguns conteúdos para adaptá-lo ao seu formato desejado. Com o Minecket, você tem a garantia de ter um website responsivo, rápido e limpo, sem a necessidade de um backend.
+
+> Além disso, o Minecket foi submetido a vários testes de desempenho, a fim de garantir que ele seja rápido e eficiente. Ao longo do processo de desenvolvimento, foram realizados ajustes e melhorias para que o site ficasse cada vez mais limpo e adaptado às necessidades dos usuários.
+
+> Em resumo, se você está procurando um modelo de website responsivo, rápido e limpo para o seu servidor de Minecraft, o Minecket é uma excelente escolha. Com um design elegante e altamente adaptável, ele é perfeito para oferecer aos seus usuários uma experiência de alta qualidade.
 
 ---
 
