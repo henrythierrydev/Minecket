@@ -57,10 +57,21 @@
             left: 50%;
             transform: translate(-50%, -50%);
             margin: auto;
-            width: 70% !important;
-            height: 60% !important;
+            width: 80% !important;
+            height: 80% !important;
             padding: 10px;
             overflow: auto;
+        }
+
+        .popup-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content a {
+            width: 50%;
         }
 
         .popup::-webkit-scrollbar {
