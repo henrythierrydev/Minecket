@@ -1,4 +1,4 @@
-# 🏆 Minecket
+# 🏆 • Minecket
 
 > Minecket é um modelo de website criado por um grupo de amigos durante a disciplina de Códigos de Alta Performance na faculdade em um projeto. O objetivo era criar um website responsivo para servidores de Minecraft com login sem backend, sem o uso de frameworks, com foco em velocidade e limpeza de código.
 
@@ -12,7 +12,7 @@
 
 ---
 
-# 📜 Preview
+# 📜 • Preview
 
 ![site-preview](https://user-images.githubusercontent.com/119537238/230700034-a2a6b979-f07a-4396-b7a2-6a7ef54a3faa.PNG)
 
@@ -20,6 +20,19 @@
 
 ---
 
-# 📟 Desempenho
+# 📟 • Desempenho
 
 > Fizermos diversos tipos de testes de desempenho e ao longo de todos eles formos adaptando e melhorando o site para cada vez mais ficar mais clean e melhor adaptado, fizermos inicialmente ele com a proporção de <b>1440px</b> porém idependente disso ele se adapta muito melhor que desktop para mobile.
+
+# ⭐ • Componentes
+
+```
+1. Navbar Responsiva.
+2. Responsividade até 4K.
+3. Cards de compra e botões estilizados.
+4. Sistema de accordion com noticias em timestamp.
+5. Sistema de Carrosel de imagens e conteudo responsivos.
+6. Footer simples e elegante.
+7. Sistema de regras elegante.
+8. E muito mais!
+```
