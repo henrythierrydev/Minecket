@@ -58,12 +58,13 @@
             transform: translate(-50%, -50%);
             margin: auto;
             width: 80% !important;
-            height: 80% !important;
+            height: 70% !important;
             padding: 10px;
             overflow: auto;
         }
 
         .popup-content {
+            padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -81,6 +82,10 @@
         .popup::-webkit-scrollbar-thumb {
             background-color: rgba(0, 0, 0, 0.5);
             border-radius: 4px;
+        }
+
+        .popup li {
+            margin: 10px;
         }
     }
 }
