@@ -1,52 +1,89 @@
-function setupPopup(openBtn, closeBtn, popup, overlay) {
-  openBtn.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.add("popup-active");
-    overlay.style.display = "block";
-  });
+// ================
+//    COPIAR IP
+// ================
+const copyBtn = document.getElementById("copy-btn");
 
-  closeBtn.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.remove("popup-active");
-    overlay.style.display = "none";
-  });
+copyBtn.addEventListener("click", function() {
+    var ip = "jogar.minecket.net"; // Adicione o IP do seu servidor aqui
+
+    navigator.clipboard.writeText(ip)
+        .then(() => {
+            var popup = document.getElementById("play-copy-alert");
+
+            setTimeout(function() {
+                popup.classList.add("show");
+            }, 50);
+
+            setTimeout(function() {
+                popup.classList.remove("show");
+            }, 2000);
+        });
+});
+
+// ================
+//    ACCORDION
+// ================
+
+const newsItems = document.querySelectorAll('.news-item');
+
+newsItems.forEach(item => {
+    const title = item.querySelector('.news-item-title');
+    const content = item.querySelector('.news-item-content');
+
+    title.addEventListener('click', () => {
+        const isExpanded = item.classList.contains('expanded');
+        newsItems.forEach(item => {
+            item.classList.remove('expanded');
+            item.querySelector('.news-item-content').style.height = '0';
+        });
+
+        if(!isExpanded) {
+            content.style.height = `${content.scrollHeight}px`;
+            item.classList.add('expanded');
+        }
+    });
+});
+
+// ================
+//    CAROUSEL
+// ================
+
+const radioInputs = document.querySelectorAll(".radio-input");
+const carouselItems = document.querySelectorAll(".carousel-item");
+const radioLabels = document.querySelectorAll(".radio-label");
+let currentIndex = 0;
+
+function showItem(index) {
+    carouselItems[currentIndex].classList.remove("active");
+    radioLabels[currentIndex].classList.remove("active");
+    currentIndex = index;
+    carouselItems[currentIndex].classList.add("active");
+    radioLabels[currentIndex].classList.add("active");
+    radioInputs[currentIndex].checked = true;
 }
 
-const popup1 = document.getElementById("beneficios-1");
-const overlay1 = document.querySelector(".overlay");
-setupPopup(
-  document.getElementById("open-popup-1"),
-  document.getElementById("close-popup-1"),
-  popup1,
-  overlay1
-);
+function nextItem() {
+    let newIndex = currentIndex + 1;
+    if(newIndex >= carouselItems.length) {
+        newIndex = 0;
+    }
+    showItem(newIndex);
+}
 
-const popup2 = document.getElementById("beneficios-2");
-const overlay2 = document.querySelector(".overlay");
-setupPopup(
-  document.getElementById("open-popup-2"),
-  document.getElementById("close-popup-2"),
-  popup2,
-  overlay2
-);
+let intervalId = setInterval(nextItem, 10000);
 
-const popup3 = document.getElementById("beneficios-3");
-const overlay3 = document.querySelector(".overlay");
-setupPopup(
-  document.getElementById("open-popup-3"),
-  document.getElementById("close-popup-3"),
-  popup3,
-  overlay3
-);
+radioLabels.forEach((label, index) => {
+    label.addEventListener("click", () => {
+        showItem(index);
+        clearInterval(intervalId);
+        intervalId = setInterval(nextItem, 10000);
+    });
+    label.setAttribute('for', `radio-${index + 1}`);
+});
 
-const popup4 = document.getElementById("beneficios-4");
-const overlay4 = document.querySelector(".overlay");
-setupPopup(
-  document.getElementById("open-popup-4"),
-  document.getElementById("close-popup-4"),
-  popup4,
-  overlay4
-);
+radioInputs.forEach((input, index) => {
+    input.setAttribute('id', `radio-${index + 1}`);
+});
 
 // ==================
 //   NAVBAR MOBILE
