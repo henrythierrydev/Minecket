@@ -42,6 +42,7 @@
 2. Sistema previo de login
 3. Sistema de carrinho avançado
 4. Sistema de loading preview
+5. Sistema de SEO incluido
 ```
 
 > O projeto possui uma preview de um sistema de login e registro, esse sistema foi todo feito com JS, como dito antes, somente como <b>Preview</b>, é necessário adaptar ou remover ele para usar em seu projeto pois ele foi adicionado já que era obrigatório no projeto da faculdade. O Sistema de <b>Checkout</b> NAO foi adicionado por motivos óbvios.
