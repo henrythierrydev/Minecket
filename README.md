@@ -6,8 +6,6 @@
 
 > Este modelo de website é público e pode ser utilizado por qualquer pessoa que deseje criar um website para um servidor de Minecraft. Basta modificar alguns conteúdos para adaptá-lo ao seu formato desejado. Com o Minecket, você tem a garantia de ter um website responsivo, rápido e limpo, sem a necessidade de um backend.
 
-> Além disso, o Minecket foi submetido a vários testes de desempenho, a fim de garantir que ele seja rápido e eficiente. Ao longo do processo de desenvolvimento, foram realizados ajustes e melhorias para que o site ficasse cada vez mais limpo e adaptado às necessidades dos usuários.
-
 > Em resumo, se você está procurando um modelo de website responsivo, rápido e limpo para o seu servidor de Minecraft, o Minecket é uma excelente escolha. Com um design elegante e altamente adaptável, ele é perfeito para oferecer aos seus usuários uma experiência de alta qualidade.
 
 ---
@@ -22,7 +20,7 @@
 
 # 📟 • Desempenho
 
-> Fizermos diversos tipos de testes de desempenho e ao longo de todos eles formos adaptando e melhorando o site para cada vez mais ficar mais clean e melhor adaptado, fizermos inicialmente ele com a proporção de <b>1440px</b> porém idependente disso ele se adapta muito melhor que desktop para mobile.
+> O Minecket foi submetido a vários testes de desempenho, a fim de garantir que ele seja rápido e eficiente. Ao longo do processo de desenvolvimento, foram realizados ajustes e melhorias para que o site ficasse cada vez mais limpo e adaptado às necessidades dos usuários.
 
 # ⭐ • Componentes
 
