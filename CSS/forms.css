@@ -123,12 +123,12 @@
         padding: 50px 0px !important;
     }
 
-    form {
+    .login form, .cadastro form {
         width: 80%;
         padding: 20px;
     }
 
     h2 {
-        font-size: 50px;
+        font-size: 45px;
     }
 }

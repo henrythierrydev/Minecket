@@ -8,14 +8,14 @@
   @keyframes slideDown {
     0% {height: 0;opacity: 0;}
     50% {opacity: 0.5;}
-    100% {height: 460px;opacity: 1;}
+    100% {height: 430px;opacity: 1;}
   }
 
   @media screen and (min-width: 425px) {
     @keyframes slideDown {
       0% {height: 0;opacity: 0;}
       50% {opacity: 0.5;}
-      100% {height: 540px;opacity: 1;}
+      100% {height: 500px;opacity: 1;}
     }  
   }
 }
