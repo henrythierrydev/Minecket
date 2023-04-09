@@ -36,3 +36,15 @@
 7. Sistema de regras elegante.
 8. E muito mais!
 ```
+
+# 🔔 • Recursos
+
+```
+1. Sistema de Popups Responsivos
+2. Sistema previo de login
+3. Sistema de carrinho avançado
+```
+
+> O projeto possui uma preview de um sistema de login e registro, esse sistema foi todo feito com JS, como dito antes, somente como <b>Preview</b>, é necessário adaptar ou remover ele para usar em seu projeto pois ele foi adicionado já que era obrigatório no projeto da faculdade. O Sistema de <b>Checkout</b> NAO foi adicionado por motivos óbvios.
+
+> Feito com ♥️ por Henry8K e equipe.
