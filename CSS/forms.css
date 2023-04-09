@@ -128,7 +128,11 @@
         padding: 20px;
     }
 
-    h2 {
+    .login h2 {
         font-size: 45px;
+    }
+
+    .cadastro h2 {
+        font-size: 35px;
     }
 }
