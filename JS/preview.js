@@ -4,8 +4,7 @@
 
 var timeLimit = 5000;
 window.addEventListener("load", function() {
-	// Redireciona para a página index.html
-	window.location.href = "../HTML/index.html";
+	window.location.href = "HTML/index.html";
 });
 
 var errorTimer = setTimeout(function() {

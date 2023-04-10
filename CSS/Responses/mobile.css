@@ -1,6 +1,6 @@
-@import url(../CSS/palette.css);
-@import url(../CSS/index.css);
-@import url(../CSS/animations.css);
+@import url(../palette.css);
+@import url(../index.css);
+@import url(../animations.css);
 
 @media screen and (min-width: 320px) and (max-width: 999px) {
 
