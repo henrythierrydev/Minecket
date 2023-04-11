@@ -52,6 +52,6 @@
 
 # 🎯 - Considerations
 
-> The project has a preview of a login and registration system, this system was all done with JS, as said before, only as a preview, it is necessary to adapt or remove it to use in your project because it was added since it was mandatory in the college project. The **Checkout**, **WAS NOT** system was added for obvious reasons. This website is in **Portuguese** please change for your native lang.
+> The project has a preview of a login and registration system, this system was all done with JS, as said before, only as a preview, it is necessary to adapt or remove it to use in your project because it was added since it was mandatory in the college project. The **Checkout**, system *WAS NOT** added for obvious reasons. This website is in **Portuguese** please change for your native lang.
 
 > Done at ♥️ by Henry8K and team.
