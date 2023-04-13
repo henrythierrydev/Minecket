@@ -1,4 +1,0 @@
-Version: 3.0.0
-Languages: Default English
-Translated by: Henry8K and PetterLight
-Project by HenryDM [Henry8K]
