@@ -1,0 +1,36 @@
+# Enables the URL Rewrite Module
+RewriteEngine On
+
+# Redirects traffic from HTTP to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remove the .html extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^^]+)$ $1.html [NC,L]
+
+# Redirects URLs without www to URLs with www
+RewriteCond %{HTTP_HOST} !^www. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirects double slash URLs to single slashes
+RewriteCond %{REQUEST_URI} ^(.*)//(.*)$
+RewriteRule . %1/%2 [R=301,L]
+
+# Set the default file type for index.html
+DirectoryIndex index.html
+
+# Prevent direct access to .htaccess and .htpasswd files
+<FilesMatch "^\.ht">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Prevent direct access to the .htpasswd password file
+<Files ".htpasswd">
+    Require all denied
+</Files>
+
+<FilesMatch "\.(css)$">
+  Header set Access-Control-Allow-Origin "*"
+</FilesMatch>

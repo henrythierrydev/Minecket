@@ -1,0 +1,193 @@
+.cart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: var(--primary-bc);
+	padding: 30px 50px;
+}
+
+.cart h1 {
+	font-family: 'Panton';
+	font-size: 90px;
+	text-transform: uppercase;
+	color: var(--primary-tc);
+	margin: 0;
+}
+
+.cart span {
+	font-size: 24px;
+}
+
+.carts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: start !important;
+	padding: 50px;
+}
+
+.cart-item {
+	margin: 20px;
+	border: 2px solid #777;
+	border-radius: 5px;
+	width: 100%;
+	display: none !important;
+}
+
+.cart-item img {
+	width: auto;
+	height: auto;
+	border-right: 2px solid #777;
+}
+
+.cart-item.active {
+	display: flex !important;
+}
+
+.cart-item-content {
+	padding: 20px 50px;
+}
+
+.carts h2 {
+	font-size: 50px;
+	margin: 0;
+}
+
+.carts span {
+	font-size: 24px;
+}
+
+.carts li {
+	margin: 10px;
+}
+
+.cart-none {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	margin: 0 0 20px !important;
+	border-radius: 5px;
+	border: 2px solid #777;
+	width: 90%;
+}
+
+.cart-none h2 {
+	font-size: 40px;
+	text-transform: uppercase;
+	margin: 10px 0 0;
+}
+
+
+@media screen and (max-width: 1330px) {
+	.carts h2 {
+		font-size: 40px;
+	}
+
+	.carts {
+		width: 100%;
+	}
+
+	.carts ul {
+		font-size: 14px;
+	}
+
+	.carts {
+		padding: 30px 40px;
+	}
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 999px) {
+
+	.carts {
+		text-align: center !important;
+		padding: 30px 10px !important;
+	}
+
+	.cart h1 {
+		font-size: 50px;
+	}
+
+	.cart-item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.cart-item img {
+		width: 100%;
+		height: auto;
+		border-right: 2px solid #777;
+	}
+
+	.cart-item ul {
+		display: none;
+	}
+
+	.cart-item a {
+		width: 60%;
+	}
+
+	.carts h2 {
+		font-size: 20px;
+	}
+
+	.carts span {
+		font-size: 14px;
+	}
+
+	.cart-none {
+		width: 60%;
+	}
+
+	.cart-none h2 {
+		font-size: 25px;
+	}
+
+	.cart-none span {
+		font-size: 15px;
+	}
+
+	@media screen and (min-width: 768px) {
+		.cart h1 {
+			font-size: 90px;
+		}
+
+		.cart span {
+			font-size: 24px;
+		}
+
+		.cart {
+			padding: 30px 80px;
+		}
+
+		.carts h2 {
+			font-size: 40px;
+		}
+
+		.carts span {
+			font-size: 24px;
+		}
+
+		.cart-item ul {
+			text-align: start !important;
+			display: block;
+			font-size: 20px;
+		}
+
+		.cart-none {
+			width: 90%;
+		}
+
+		.cart-none h2 {
+			font-size: 50px;
+		}
+
+		.cart-none span {
+			font-size: 25px;
+		}
+	}
+}

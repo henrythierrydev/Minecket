@@ -1,0 +1,73 @@
+@import url(../Components/Palette.css);
+
+.main {
+    padding: 2em 10em;
+    background-color: var(--primary-bc);
+}
+
+.main h1 {
+    margin: 0;
+    font-family: 'Panton';
+    text-transform: uppercase;
+    font-size: 70px;
+    color: var(--primary-tc);
+}
+
+.main li {
+    margin: 10px;
+}
+
+.rules-title {
+    text-align: center;
+}
+
+.rules-title p {
+    margin: 30px;
+}
+
+.rules-content {
+    margin: 60px;
+}
+
+.rules-content h2 {
+    margin: 0;
+    font-size: calc(100% * 2);
+    color: #160480;
+}
+
+.rules-end {
+    text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+    .main {
+        padding: 30px 15px;
+    }
+
+    .rules-content {
+        margin: 10px;
+    }
+
+    .main h1 {
+        font-size: 60px;
+    }
+
+    .rules-end {
+        margin: 30px 0px;
+        padding: 20px;
+    }
+
+    @media screen and (min-width: 767px) {
+        .main {
+            padding: 30px 50px;
+        }
+
+        .main h1 {
+            font-size: 80px;
+        }
+
+        .rules-end {
+            padding: 0;
+        }
+    }
+}

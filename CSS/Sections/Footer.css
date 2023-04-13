@@ -1,0 +1,111 @@
+@import url(../CSS/Components/Palette.css);
+
+.footer {
+	padding: 30px;
+	background-color: var(--primary-bc);
+}
+
+.footer-container {
+	justify-content: space-between;
+}
+
+.footer-credits {
+	margin: 0px 15px 0px 0px;
+}
+
+.footer-credits-photo img {
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+	box-shadow: 0px 0px 2px;
+}
+
+.footer-credits-photo h2 {
+	font-size: 30px;
+	font-family: 'Panton';
+	color: var(--primary-tc);
+	text-transform: uppercase;
+}
+
+.footer-credits a {
+	text-decoration: none;
+}
+
+.footer-credits-photo h2::after {
+	width: 70%;
+	content: '';
+	height: 3px;
+	display: block;
+	margin: 0 auto;
+	background-color: #999999;
+}
+
+.footer-items {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.footer-socials img {
+	margin: 5px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.discord-social {
+	background-color: #106299;
+}
+
+.twitter-social {
+	background-color: #10b0b6;
+}
+
+.yt-social {
+	background-color: #ce1414;
+}
+
+@media screen and (min-width: 320px) and (max-width: 999px) {    
+    .footer {
+        padding: 30px;
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .footer-credits, .footer-items, .footer-socials {
+        margin: 10px;
+    }    
+
+    @media screen and (min-width: 425px) {  
+        .footer {
+            padding: 20px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .sp-2, .sp-1 {
+            display: none;
+        }        
+
+        .footer-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .footer-socials img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+    .sp-2 {
+        display: none;
+    }
+}
