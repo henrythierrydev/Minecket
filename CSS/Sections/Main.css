@@ -1,36 +1,38 @@
+@import url(../Components/Palette.css);
+
 .main {
-  padding: 40px;
+    padding: 40px;
 }
 
 .main-title {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .main-title img {
-  width: 50px;
-  height: 50px;
-  padding: 8px;
-  background-color: #fac562;
-  border-radius: 5px;
-  margin-right: 10px;
-  box-shadow: 0px 0px 5px;
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    background-color: #fac562;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 5px;
 }
 
 .main-title h1 {
-  color: var(--primary-tc);
-  font-size: 34px;
-  font-weight: 900;
+    color: var(--primary-tc);
+    font-size: 34px;
+    font-weight: 900;
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-  margin: 10px;
+    margin: 10px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 999px) {
