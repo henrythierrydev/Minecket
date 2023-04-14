@@ -17,5 +17,5 @@ navbars.addEventListener('click', () => {
 const navinicial = document.querySelector('.nav-logo');
 
 navinicial.addEventListener('click', () => {
-    window.location.href = "../HTML/index.html";
+    window.location.href = "../HTML/Index.html";
 });
