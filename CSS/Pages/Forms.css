@@ -1,0 +1,90 @@
+@import url(../Components/Palette.css);
+
+.login form {
+    background-color: var(--primary-bc);
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px #999;
+    padding: 40px;
+    max-width: 500px;
+}
+
+.login h2 {
+    color: #091031;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Panton';
+    margin: 10px 0px 30px 0px;
+    text-transform: uppercase;
+}
+
+.login h2::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 4px;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+.login input {
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    outline: none;
+}
+
+.login button {
+    display: inline-block;
+    background-color: #3b96be;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px 25px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 0px #014455;
+}
+
+.login button:hover {
+    background-color: #30729e;
+}
+
+.login a {
+    margin: 0;
+    width: 100%;
+}
+
+.login {
+    padding: 5em 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../Pages/Assets/forms-background.webp);
+}
+
+@media screen and (min-width: 319px) and (max-width: 1000px) {
+
+    .login {
+        padding: 50px 0px;
+    }
+
+    .login form {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .login h2 {
+        font-size: 50px;
+    }
+}

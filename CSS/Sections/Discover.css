@@ -1,0 +1,159 @@
+@import url(../Components/Palette.css);
+
+.discover {
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	color: var(--secondary-tc);
+	background-color: var(--secondary-bc);
+}
+
+.discover h1 {
+	margin: 0;
+	font-size: 70px;
+	font-family: 'Panton';
+	text-transform: uppercase;
+}
+
+.discover h1::after {
+	content: '';
+	display: block;
+	width: 70%;
+	height: 3px;
+	background-color: #bebebe;
+	margin: 0 auto;
+}
+
+.carousel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.carousel-item:not(.active) {
+	display: none;
+}
+
+.carousel-item {
+	display: flex;
+	margin: 40px 0px 0px 0px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	max-width: 620px;
+	opacity: 1;
+	animation: fadeIn 1s ease-in;
+}
+
+.carousel-item img {
+	width: 738px;
+	height: 380px;
+	border: 4px solid #76c3d3;
+	box-shadow: 0px 5px 0px #76c3d3;
+	border-radius: 5px;
+}
+
+.carousel-item h2 {
+	font-size: 36px;
+	margin: 15px 0px 0px 0px;
+}
+
+.carousel-radio {
+	display: flex;
+	justify-content: center;
+}
+
+.radio-input {
+	display: none;
+}
+
+.radio-label {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: gray;
+	margin: 0 5px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.radio-input:checked+.radio-label {
+	background-color: white;
+	transform: scale(1.5);
+}
+
+@media screen and (min-width: 320px) and (max-width: 999px) {
+	.discover {
+		padding: 30px;
+	}
+
+	.discover h1 {
+		font-size: 30px;
+	}
+
+	.carousel-item img {
+		border: 1px solid #76c3d3;
+		width: 247px;
+		height: 127px;
+	}
+
+	.carousel-item {
+		margin-top: 20px;
+	}
+
+	.carousel-item h2 {
+		font-size: 20px;
+	}
+
+	.carousel-item p {
+		font-size: calc(100% - 30%);
+	}
+
+	.radio-label {
+		margin-top: 10px;
+	}
+
+	@media screen and (min-width: 374px) {
+		.discover h1 {
+			font-size: 40px;
+		}
+
+		.carousel-item img {
+			width: 296.4px;
+			height: 152.4px;
+		}
+	}
+
+	@media screen and (min-width: 424px) {
+		.carousel-item h2 {
+			font-size: 26px;
+		}
+
+		.carousel-item p {
+			font-size: 14px;
+		}
+	}
+
+	@media screen and (min-width: 767px) {
+		.discover h1 {
+			font-size: 60px;
+		}
+
+		.carousel-item h2 {
+			font-size: 34px;
+		}
+
+		.carousel-item p {
+			font-size: 17px;
+		}
+
+		.carousel-item img {
+			width: 533.52px;
+			height: 274.32px;
+		}
+	}
+}

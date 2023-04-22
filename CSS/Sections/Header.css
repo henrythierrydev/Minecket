@@ -1,0 +1,54 @@
+@import url(../Components/Palette.css);
+
+.header {
+	padding: 6em;
+	background-size: cover;
+	background-position: top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-image: url(../Sections/Assets/background.webp);
+}
+
+.header-text {
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--secondary-tc);
+	font-family: 'Panton', sans-serif;
+}
+
+.header h1 {
+	margin: 0;
+	font-size: 100px;
+	text-shadow: 0px 4.5px 0px #000000a2;
+}
+
+.header span {
+	margin: 0;
+	font-size: 40px;
+	text-transform: initial;
+	text-shadow: 0px 1.5px 0px #000000a2;
+}
+
+@media screen and (min-width: 320px) and (max-width: 999px) {
+	.header {
+		padding: 50px 30px;
+	}
+
+	.header-text h1 {
+		font-size: 55px;
+	}
+
+	.header-text span {
+		font-size: 16px;
+	}
+
+	@media screen and (min-width: 424px) {
+		.header-text h1 {
+			font-size: 70px;
+		}
+
+		.header-text span {
+			font-size: 26px;
+		}
+	}
+}
