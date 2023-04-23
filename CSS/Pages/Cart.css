@@ -95,22 +95,19 @@
 	.carts ul {
 		font-size: 14px;
 	}
-
-	.carts {
-		padding: 30px 40px;
-	}
 }
-
 
 @media screen and (min-width: 320px) and (max-width: 999px) {
 
 	.cart {
 		padding: 2em;
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 
 	.carts {
 		text-align: center;
-		padding: 30px 10px 0px 0px;
 	}
 
 	.cart h1 {
