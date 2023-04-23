@@ -19,13 +19,12 @@
 
 ```
 1. Responsive Navbar.
-2. Responsiveness up to 4K.
-3. Stylized buy cards and buttons.
-4. Accordion system with news in timestamp.
-5. Carousel system with responsive images and content.
-6. Simple and elegant footer.
-7. Elegant rules system.
-8. And much more!
+2. Elegant rules system.
+3. Responsiveness up to 4K.
+4. Simple and elegant footer.
+5 Stylized buy cards and buttons.
+6. Accordion system with news in timestamp.
+7. Carousel system with responsive images and content.
 ```
 
 ---
@@ -39,14 +38,30 @@
 4. Loading preview system.
 5. SEO system included.
 6. And much more!
+7. 404 and 505 pages errors.
 ```
 ---
 
 # 📫 - How to use
 
-> To use this template, you can download it from the releases, since they are bug approved and fixed versions! After downloading, extract the zip file to a folder and modify the whole body [HTML] for what you need. If you want more advanced features and don't have the knowledge, I recommend hiring a developer to do it for you, or you can also contact me on Discord: zHenry#3137.
+> To use this template, you can download it from the releases, since they are bug approved and fixed versions! After downloading, extract the zip file to a folder and modify the whole body [HTML] for what you need. If you want more advanced features and don't have the knowledge, I recommend hiring a developer to do it for you.
 
 > **https://github.com/Henry8K/Minecket/releases/**
+
+---
+
+# 🔒 - API
+
+> To add the checkout system with payment methods you can use the cookies that are created when the user logs in to generate payment APIs. Here is what cookies are and how you can get them using JavaScript:
+
+```js
+const loggedCookie = getCookieValue('logged');
+console.log(loggedCookie);
+
+const userCookie = getCookieValue('nickname');
+console.log(userCokkie);
+
+```
 
 ---
 
